@@ -41,10 +41,10 @@ public class Example {
       // String to hold the response
         String response = "";
 
-      TourSearch tourcms = new TourSearch(marketplaceId, channelId, apiKey);
+      TourLocationsList tourcms = new TourLocationsList(marketplaceId, channelId, apiKey);
 
       try {
-         response = tourcms.searchTours(qParams);
+         response = tourcms.listTourLocations(qParams);
       } catch (Exception e) {
          e.printStackTrace();
       }
